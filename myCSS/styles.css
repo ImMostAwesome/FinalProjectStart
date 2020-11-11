@@ -106,11 +106,14 @@ header{
 .related-content{
    grid-area: right;
    background-color: red;
+   font: 32pt Arial;
+   color: darkblue;
 }
 .main-content{
    grid-area: main;
    background-color: green;
    position: relative;
+   min-height: 542px;
 }
 @media (min-width: 700px){
 
@@ -168,4 +171,26 @@ img.HomeTown{
    background-color: green;
    padding: 5px;
    border-radius: 10px;
+}
+#About_Me{
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+#About_Me img{
+   padding: 20px;
+   width: 200px;
+}
+#About_Me div div{
+   font: 20pt serif;
+}
+#theEnd{
+   grid-area: footer;
+   background-color: darkcyan;
+   text-align: center;
+   font-size: 20pt;
+   height: 200px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-style: italic;
+   font-weight: bold;
 }
