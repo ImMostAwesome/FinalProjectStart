@@ -7,10 +7,10 @@ window.addEventListener("DOMContentLoaded", function()
 	
 });
 function highlight(event){
-    event.target.style = "box-shadow: 0 0 10px blue;";
+    event.target.style = "box-shadow: 0 0 10px blue;"
 }
 function unHighlight(event){
-    event.target.style = "box-shadow: none";
+    event.target.style = "box-shadow: none;"
 }
 let shown = "Home";
 function linkClicked(ev){
