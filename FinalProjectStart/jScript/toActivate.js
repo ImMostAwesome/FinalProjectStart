@@ -14,8 +14,6 @@ function unHighlight(event){
 }
 let shown = "Home";
 function linkClicked(ev){
-    //document.getElementById(shown).style.display="none";
-    //document.getElementById(ev.target.innerHTML).style.display = "flex";
     for (let toShow of document.getElementsByClassName(shown)) {
         toShow.style.display = "none";
     } 
