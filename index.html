@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta charset="UTF-8">
-      <title>Seth Young - Projects</title>
-      <link href="myCSS/styles.css" rel="stylesheet">
-   </head>
 
-   <body>
-      <header>
-         <div style="padding-left: 100px;"><img src="images/Pic.jpg" height="100px"></div>
-         <div class="logo" style="text-align: center; padding-top: 25px;">Seth Young</div>
-      </header>
-      <div id="navigation">
-         <div style="position: fixed; top: 200px; z-index: 3;"><nav><a class="inter" href="#" onclick="linkClicked(event)">Projects</a></nav>
-         </div>
-         <div style="position: fixed; top: 300px; z-index: 3;"><nav><a class="inter" href="#" onclick="linkClicked(event)">About_Me</a></nav>
-         </div>
-         <div style="position: fixed; top: 400px; z-index: 3;"><nav><a class="inter" href="#" onclick="linkClicked(event)">HomeTown</a></nav>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta charset="UTF-8">
+   <title>Seth Young - Projects</title>
+   <link href="myCSS/styles.css" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <div style="padding-left: 100px;"><img src="images/Pic.jpg" height="100px"></div>
+      <div class="logo" style="text-align: center; padding-top: 25px;">Seth Young</div>
+   </header>
+   <div id="navigation">
+      <div style="position: fixed; top: 200px; z-index: 3;">
+         <nav><a class="inter" href="#" onclick="linkClicked(event)">Projects <i class='fas fa-robot'></i></a></nav>
+      </div>
+      <div style="position: fixed; top: 300px; z-index: 3;">
+         <nav><a class="inter" href="#" onclick="linkClicked(event)">About_Me <i class='fas fa-snowman'></i></a></nav>
+      </div>
+      <div style="position: fixed; top: 400px; z-index: 3;">
+         <nav><a class="inter" href="#" onclick="linkClicked(event)">HomeTown <i class='fas fa-shapes'></i></a></nav>
+      </div>
+   </div>
+   <div class="main-content">
+      <div class="title" id="title">
+         <h1 style="padding-left:50px;">Home</h1>
+
+      </div>
+      <div class="Home" id="Home">
+         <figure>
+            <img src="images/IMG_2925.JPG" alt="Family" width="100%">
+            <figcaption>My family in front of our house</figcaption>
+         </figure>
+      </div>
+      <div class="About_Me" id="About_Me" style="display: none;">
+         <img src="images/Pic.jpg" alt="ME">
+         <div>
+            <div>Name: Seth Young</div>
+            <p></p>
+            <div>Height: Taller than everyone who's not taller than me</div>
+            <p></p>
+            <div>Born: Sometime before now</div>
+            <p></p>
+            <div>Interests: Interesting things</div>
          </div>
       </div>
-         <div class="main-content">
-            <div class="title" id="title">
-               <h1 style="padding-left:50px;">Home</h1>
-               
-            </div>
-            <div class="Home" id="Home">
-               <figure>
-                  <img src="images/IMG_2925.JPG" alt="Family" width="100%">
-                  <figcaption>My family in front of our house</figcaption>
-               </figure>
-            </div>
-            <div class="About_Me" id="About_Me" style="display: none;">
-               <img src="images/Pic.jpg" alt="ME">
-               <div>
-                  <div>Name: Seth Young</div>
-                  <p></p>
-                  <div>Height: Taller than everyone who's not taller than me</div>
-                  <p></p>
-                  <div>Born: Sometime before now</div>
-                  <p></p>
-                  <div>Interests: Interesting things</div>
-               </div>
-            </div>
-            
-            <div class="Projects" id="Projects" style="display: none">
-               <div width=100%><video controls width=90% style="padding-bottom: 50px;"><source src="videos/FinalProject1.mp4" type="video/mp4"> Does not support</video></div>
-                  <div width=30%><video controls><source src="videos/DinoProject.mp4" type="video/mp4"> Does not support</video></div>
-                  <div width=30%><video controls><source src="videos/GreenDino.mp4" type="video/mp4"> Does not support</video></div>
-                  <div width=30%><video controls><source src="videos/lizardSwim.mp4" type="video/mp4"> Does not support</video></div>
-                  <div style="padding: 50px;"><video controls width="280"><source src="videos/DinoRideRaw.mp4" type="video/mp4"> Does not support</video></div>
-                  
-            </div>
-            <img class="HomeTown" id="HomeTown" src="images/PinkDino.jpg" alt="Vernal's Pink Dinosaur" style="display: none;">
-            <div class="HomeTown" id="HomeTown" style="display: none;">
-               <h2 id="front">Vernal, Ut</h2>
-               
-               
-            </div>
-         </div>
-         <div class="related-content" id="related-content">
-            Click on the links to see more
-         </div>
-      <div id="theEnd">
-         You have reached the bottom of the page!
+
+      <div class="Projects" id="Projects" style="display: none">
+         <div width=100%><video controls width=90% style="padding-bottom: 50px;">
+               <source src="videos/FinalProject1.mp4" type="video/mp4"> Does not support</video></div>
+         <div width=30%><video controls>
+               <source src="videos/DinoProject.mp4" type="video/mp4"> Does not support</video></div>
+         <div width=30%><video controls>
+               <source src="videos/GreenDino.mp4" type="video/mp4"> Does not support</video></div>
+         <div width=30%><video controls>
+               <source src="videos/lizardSwim.mp4" type="video/mp4"> Does not support</video></div>
+         <div style="padding: 50px;"><video controls width="280">
+               <source src="videos/DinoRideRaw.mp4" type="video/mp4"> Does not support</video></div>
+
       </div>
+      <img class="HomeTown" id="HomeTown" src="images/PinkDino.jpg" alt="Vernal's Pink Dinosaur" style="display: none;">
+      <div class="HomeTown" id="HomeTown" style="display: none;">
+         <h2 id="front">Vernal, Ut</h2>
+
+
+      </div>
+   </div>
+   <div class="related-content" id="related-content">
+      Click on the links to see more
+   </div>
+   <div id="theEnd">
+      You have reached the bottom of the page!
+   </div>
    <script src="jScript/toActivate.js"></script>
-   </body>
+   <script src="https://kit.fontawesome.com/98e9900a10.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
