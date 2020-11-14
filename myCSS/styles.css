@@ -7,12 +7,12 @@
       'menu main right'
       'menu main right'
       'footer footer footer';
-      background-color: grey;
+      background-image: radial-gradient(purple, blue, red);
       padding: 10px;
 }
 #navigation{
    grid-area: menu;
-   background-color: yellow;
+   background-image: radial-gradient(farthest-corner, orange 60%, red);
    display: flex;
    flex-direction: column;
    width: 130px;
@@ -31,59 +31,47 @@
       'header header'
       'main main'
       'right right'
-      'menu menu'
       'footer footer';
-      background-color: yellow;
+      background-image: radial-gradient(blue, blue, red);
       padding: 10px;
-   }   
+   }  
    #navigation{
-      grid-area: menu;
-      background-color: yellow;
-      display: flex;
-      flex-direction: row;
+      position: fixed;
+      bottom: 00px;
+      left: 0px;
+      width: 100%;
+      z-index: 3;
+      background-image: radial-gradient(rgb(255,255,0,.6) 60%, green);
+      height: 50px;
    }
    #navigation div{
       position: fixed;
       bottom: 20px;
-      padding-top: 20px;
       left: 0;
       bottom: 10px;
       top: auto !important;
-      justify-self: center;
       font-size: 20px;
    } #navigation div + div{
       left: 220px !important;
-      bottom: 10px;
-      top: auto !important;
    } #navigation div + div + div{
       left: 110px !important;
-      bottom: 10px;
-      top: auto !important;
    }
 }@media (max-width: 300px){
    #navigation div{
       position: fixed;
       bottom: 20px;
-      padding-top: 20px;
-      left: 0;
-      bottom: 10;
-      top: auto !important;
-      justify-self: center;
-      font-size: 20px;
    } #navigation div + div{
       left: 0px !important;
-      bottom: 50px;
-      top: auto !important;
+      bottom: 60px;
    } #navigation div + div + div{
       left: 0px !important;
-      bottom: 90px;
-      top: auto !important;
+      bottom: 100px;
    }
 }
 @media (min-width: 430px){
 header{
    grid-area: header;
-   background-color: blue;
+   background-image: linear-gradient(to right, rgb(0,0,139,0),darkblue, green);
    height: 100px;
    display: flex;
    align-content: center;
@@ -91,7 +79,7 @@ header{
 }@media (max-width: 430px){
    header{
       grid-area: header;
-      background-color: blue;
+      background-image: linear-gradient(blue, green);
       height: 200px;
       display: flex;
       flex-wrap: wrap;
@@ -105,13 +93,13 @@ header{
 }
 .related-content{
    grid-area: right;
-   background-color: red;
+   background-image: linear-gradient(red, green, green);
    font: 32pt Arial;
    color: darkblue;
 }
 .main-content{
    grid-area: main;
-   background-color: green;
+   background-image: radial-gradient(blue, green);
    position: relative;
    min-height: 542px;
 }
@@ -168,7 +156,7 @@ img.HomeTown{
 
 #navigation div a{
    border: groove red 5px;
-   background-color: green;
+   background-image: radial-gradient(cyan,green);
    padding: 5px;
    border-radius: 10px;
 }
@@ -186,7 +174,7 @@ img.HomeTown{
 }
 #theEnd{
    grid-area: footer;
-   background-color: darkcyan;
+   background-image: linear-gradient(darkcyan, purple);
    text-align: center;
    font-size: 20pt;
    height: 200px;
