@@ -330,6 +330,7 @@ tr:nth-child(even){
   position: fixed;
   z-index: 5;
   left: 20px;
+  right: 20px;
   top: 120px;
   display: flex;
   align-content: center;
